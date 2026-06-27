@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: #141414;
+    color: whitesmoke;
+}
+
+header, main {
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 25px;
+}
+
+/* Header Styles */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    background-color: #141414;
+   
+}
+
+header img {
+    display: inline-block;
+    align-items: left;
+    width: 110px;
+}
+
+header img,
+header nav {
+    background-color: #141414;
+    margin-bottom: 20px;
+}
+
+
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 80px;
+    font-size: 12px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #ffffff79;
+    font-weight: 500;
+    transition: color 0.3s, transform 0.3s;
+    display: inline-block;
+    text-align: right;
+    border-bottom: 1.5px solid transparent;
+}
+
+header nav ul li a:hover {
+    color: #2196F3;
+    transform: scale(1.15,1.15);
+    border-bottom-color: #2196F3;
+}
+
+/* Main Style */
+
+main {
+    padding-top: 30px;
+}
+
+/* Main Title Style */
+
+main .main-title {
+    display: grid;
+    width: 500px;
+    gap: 10px;
+    margin: 40px 0;
+}
+
+main .main-title h1 {
+    font-size: 39px;
+    line-height: 1;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+main .main-title h4 {
+    color: #cecece;
+    font-weight: 600;
+}
+
+main .main-title p {
+    color: #8f8f8f;
+    font-size: 14px;
+}
+
+/* Produst Styles */
+
+.subtitle {
+    padding: 25px 0 40px 0;
+    color: #2db7f5;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    justify-content: center;
+    gap: 4em;
+    margin-bottom: 60px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #1C1E22;
+    border-radius: 10px;
+    justify-content: space-between;
+    transition: transform 0.35s;
+}
+
+.product img {
+    height: 200px;
+    width: 200px;
+    margin: 0 0 40px 0;
+}
+
+.product:hover {
+    transform: translateY(-8px);
+}
+
+.product h5 {
+    color: darkorange;
+    font-size: 15px;
+}
+
+#special-offer {
+    color: tomato;
+}
+
+.product h4 {
+    color: #fff;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.product .newprice {
+    color: #2196F3;
+    padding-bottom: 10px;
+}
+
+.product .price {
+    color: tomato;
+}
+
+.product p {
+    font-size: 13px;
+    padding-bottom: 20px;
+    color: #8A8F99;
+}
+
+a {
+    text-decoration: none;
+}
+
+.buy {
+    display: block;
+    margin: 0 auto;
+    height: 36px;
+    padding: 0 90px;
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: 700;
+    cursor: pointer;
+    background: #2196F3;
+    border: none;
+    color: white;
+    transition: color 0.4s, transform 0.3s;
+}
+
+.buy:hover {
+    background-color: #2db7f5;
+    transform: scale(1.05);
+}
+
+/* Fotter Styles */
+
+footer {
+    background-color: #0f0f0f;
+    padding: 20px;
+    text-align: center;
+    color: #8A8F99;
+}
+
+.help-center {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+}
+
+.help-center h3 {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 800;
+    padding: 0 0 8px 0;
+}
+
+.help-center a {
+    text-decoration: none;
+    color: #8f8f8f;
+    margin-top: 5px;
+    font-size: 12px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.help-center a:hover {
+    color: #ffffff;
+}
+
+footer hr {
+    border: none;
+    height: 1px;
+    background-color: #8f8f8f;
+    width: 90%;
+    margin: 10px auto;
+}
+
+footer p {
+    font-size: 12px;
+}
